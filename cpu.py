@@ -138,8 +138,8 @@ class CPU:
 
     # Jump to the address stored in the given register
     def jmp(self, reg):
-        reg = self.reg[reg]
-        self.pc = reg
+        val = self.reg[reg]
+        self.pc = val
 
     # Compare the values in two registers
     def cmp(self, reg_a, reg_b):
